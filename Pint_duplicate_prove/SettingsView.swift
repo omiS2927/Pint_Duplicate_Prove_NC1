@@ -22,9 +22,6 @@ struct SettingsView: View {
                     Spacer()
                 }
             }
-            
-            
-            
             .background(CustomColor.background)
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.automatic)
