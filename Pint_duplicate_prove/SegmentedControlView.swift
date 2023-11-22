@@ -31,7 +31,6 @@ struct SegmentedControlView: View {
             //Photo
         case 0:
             HStack{
-                
                 VStack{
                     Image("tiger")
                         .resizable()
@@ -88,12 +87,19 @@ struct SegmentedControlView: View {
             }
             //Collection
         case 2:
+            HStack{
+                Text("Animals collection")
+                    .bold()
+                    .foregroundStyle(.title)
+                Spacer()
+            }
+            .padding(.horizontal)
             ZStack{
                 Color(.title)
                     .frame(height: 200)
                     .cornerRadius(40)
-                    .padding()
                     .opacity(0.12)
+                
                 HStack{
                     Spacer()
                     
@@ -140,10 +146,10 @@ struct SegmentedControlView: View {
                     
                 }
             }
+            .padding(.horizontal)
             
         default:
             Text("Selezione non valida")
-            
         }
     }
 }
