@@ -67,35 +67,6 @@ struct ProfileView: View {
                     .pickerStyle(.segmented)
                     
                 SegmentedControlView()
-                    .padding()
-                    
-                
-                HStack{
-                    VStack{
-                        Image("tiger")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 168, height: 260)
-                            .cornerRadius(40)
-                        Image("fiore")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 168, height: 180)
-                            .cornerRadius(40)
-                    }
-                    VStack{
-                        Image("deer")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 168, height: 180)
-                            .cornerRadius(40)
-                        Image("libro")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 168, height: 260)
-                            .cornerRadius(40)
-                    }
-                }
             }
             .background(CustomColor.background)
             .navigationTitle("Profile")

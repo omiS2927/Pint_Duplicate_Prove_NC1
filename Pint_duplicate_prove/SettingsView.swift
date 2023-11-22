@@ -17,10 +17,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack{
             ScrollView{
-                VStack{
-                    Text("Hello")
-                    Spacer()
-                }
+               
             }
             .background(CustomColor.background)
             .navigationTitle("Settings")
